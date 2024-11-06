@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .paragraph {
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .paragraph h2 {
+    font-weight: bold;
+    margin: 0;
+    color: brown;
+    font-family: Georgia, serif; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .paragraph p {
+    line-height: 1.5;
+    color: #555;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+  }
