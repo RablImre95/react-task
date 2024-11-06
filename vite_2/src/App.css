@@ -19,7 +19,7 @@ body {
     position: relative;
   }
   
-  .paragraph h2 {
+  h2 {
     font-weight: bold;
     margin: 0;
     color: brown;
@@ -29,7 +29,7 @@ body {
     left: 10px;
   }
   
-  .paragraph p {
+ p {
     line-height: 1.5;
     color: #555;
     margin-top: 30px;
