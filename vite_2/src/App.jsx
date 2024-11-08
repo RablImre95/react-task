@@ -1,25 +1,21 @@
-import { useEffect, useState } from "react";
-import Page from './Page'
-import './App.css'
-
+import { useEffect, useState } from 'react';
+import './App.css';
+import Page from './components/Page';
 
 function App() {
-  const [data, setData] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState(null);
+
 
   useEffect(() => {
     fetch("https://baconipsum.com/api/?type=meat-and-filler&paras=20&start-with-lorem=1")
-      .then((res) => res.json())
-      .then((resData) => {
-        setData(resData)
-        setLoading(false)
-      })
+      .then(res => res.json())
+      .then(resData => setData(resData));
   }, []);
 
   return (
-    <div>
-      {loading ? (<p>loading...</p>) : (<Page data={data} /> )}
-    </div>
+    <>
+      {data ? <Page data={data} setData={setData}/> : "loading..."}
+    </>
   );
 }
 

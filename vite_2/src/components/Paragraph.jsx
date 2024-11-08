@@ -8,3 +8,5 @@ function Paragraph({ index, string }) {
 }
 
 export default Paragraph
+
+//"react/prop-types": 0 eslintbe!!!
